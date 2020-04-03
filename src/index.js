@@ -1,8 +1,39 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+// import App from './App';
 import * as serviceWorker from './serviceWorker';
+
+
+class App extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      memoData: [
+        {
+        id:1,
+        title: "Hawaiian Shirt Friday",
+        memo: 
+        "Oh, and remember: Next Friday...is Hawaiian shirt day. So, you know, if you want to, go ahead and wear a Hawaiian shirt and jeans."
+        },
+        {
+          id:2, 
+          title: "Sunday Weekend Catch-up",
+          memo: "Ahhh, I'm also going to need you to go ahead and come in on Sunday, too. We've got some new people coming in and we... need to play catch-up. Thanks!"
+
+        }
+      ]
+    };
+  }
+  render() {
+    return (
+      <div className="App">
+        <h1>Mr. Lumbergh's Memos</h1>
+      </div>
+    );
+  }
+}
+
 
 ReactDOM.render(
   <React.StrictMode>
