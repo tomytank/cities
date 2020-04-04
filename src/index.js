@@ -4,6 +4,7 @@ import './index.css';
 // import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+import QuoteList from './components/QuoteList';
 
 class App extends React.Component {
   constructor() {
@@ -29,6 +30,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <h1>Mr. Lumbergh's Memos</h1>
+        <QuoteList memos={this.state.memoData} />
       </div>
     );
   }
