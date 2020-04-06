@@ -45,6 +45,8 @@ class App extends React.Component {
   }
 }
 
+
+
 // this.state.propTypes = {
 //   memoData: PropTypes.arrayOf(PropTypes.object)
 // };

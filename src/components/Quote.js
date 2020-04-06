@@ -6,6 +6,7 @@ const Quote = props => {
         <div>
             <h2>{props.quote.title}</h2>
             <h3>{props.quote.memo}</h3>
+            <h3>memo ID is: {props.quote.id}</h3>
         </div>
     );
 };
@@ -13,7 +14,7 @@ const Quote = props => {
 
 Quote.propTypes = {
     quote: PropTypes.shape({
-        id: PropTypes.number.isRequired,
+        id: PropTypes.string.isRequired,
         title: PropTypes.string.isRequired,
         memo: PropTypes.string.isRequired
     })

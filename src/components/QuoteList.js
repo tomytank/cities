@@ -15,7 +15,7 @@ const QuoteList = props => {
     )
 };
 
-QuoteList.propTypes = {
+Quote.propTypes = {
     memos: PropTypes.arrayOf(PropTypes.object)
 };
 
