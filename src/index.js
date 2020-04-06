@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 
 import './index.css';
 // import App from './App';
@@ -25,6 +25,12 @@ class App extends React.Component {
           title: "Sunday Weekend Catch-up",
           memo: "Ahhh, I'm also going to need you to go ahead and come in on Sunday, too. We've got some new people coming in and we... need to play catch-up. Thanks!"
 
+        },
+        {
+          id:"dfd", 
+          title: 1228918283,
+          memo: "Ahhhrrrrrrhahahahhah, I'm also going to need you to go ahead and come in on Sunday, too. We've got some new people coming in and we... need to play catch-up. Thanks!"
+
         }
       ]
     };
@@ -33,11 +39,16 @@ class App extends React.Component {
     return (
       <div className="App">
         <h1>Mr. Lumbergh's Memos</h1>
-        <QuoteList memos={this.state.memoData} />
+        <QuoteList memos={this.state.memoData} key={this.state.memoData.id}/>
       </div>
     );
   }
 }
+
+// this.state.propTypes = {
+//   memoData: PropTypes.arrayOf(PropTypes.object)
+// };
+
 
 
 ReactDOM.render(

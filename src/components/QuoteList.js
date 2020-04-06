@@ -8,7 +8,7 @@ const QuoteList = props => {
         <div>
             {
                 props.memos.map(memo =>
-                    <Quote quote={memo} />
+                    <Quote quote={memo} key={memo.id}/>
                     )
             }
         </div>
