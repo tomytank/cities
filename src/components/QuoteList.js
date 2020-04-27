@@ -16,7 +16,7 @@ const QuoteList = props => {
 };
 
 Quote.propTypes = {
-    memos: PropTypes.arrayOf(PropTypes.object)
+    memos: PropTypes.arrayOf(PropTypes.numbers)
 };
 
 export default QuoteList;
